@@ -17,7 +17,6 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* header */
 .navbar {
     position: fixed;
@@ -63,6 +62,12 @@ html {
     text-decoration: none;
     color: #333;
     font-size: 18px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar ul li a:hover {
+    font-size: 19px;
 }
 
 /* Beranda */
@@ -103,7 +108,7 @@ html {
     background-color: #333;
     color: white;
     cursor: pointer;
-    transition: 1s;
+    transition: 0.7s;
     transition-timing-function: ease-in-out;
     font-size: 15px;
 }
@@ -131,6 +136,14 @@ html {
     height: 40rem;
     border-radius: 10px;
     box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.beranda img:hover {
+    width: 31rem;
+    height: 41rem;
 }
 
 /* up button */
@@ -196,6 +209,13 @@ html {
     border-radius: 10px;
     box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.3);
     cursor: pointer;
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+.product .product-card:hover {
+    height: 440px;
+    width: 340px;
 }
 
 .product .product-card:hover::before {
@@ -215,6 +235,7 @@ html {
 }
 
 .product .product-card .card-title {
+    padding-top: 2px;
     font-size: 20px;
     text-align: center;
 }
@@ -250,7 +271,7 @@ html {
     z-index: 9;
     font-size: 18px;
     cursor: pointer;
-    transition: 2s;
+    transition: 0.8s;
     transition-timing-function: ease-in-out;
 }
 
@@ -339,6 +360,11 @@ footer .footer-title {
         height: 30rem;
     }
 
+    .beranda img:hover {
+        width: 25rem;
+        height: 31rem;
+    }
+
     /* up button */
     .up-button {
         width: 45px;
@@ -367,6 +393,11 @@ footer .footer-title {
     .product .product-card {
         height: 400px;
         width: 300px;
+    }
+
+    .product .product-card:hover {
+        height: 390px;
+        width: 290px;
     }
 
     .product .product-card .card-title {

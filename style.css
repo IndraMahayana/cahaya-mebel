@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Viga', sans-serif;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* header */
+.navbar {
+    position: fixed;
+    z-index: 11;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-content: center;
+    width: 100%;
+    height: 70px;
+    padding: 0 300px;
+    color: #333;
+}
+
+.navbar-change-color {
+    background-color: #B2794D;
+    color: white;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-change-color-ul {
+    color: white;
+}
+
+.navbar .judul-navbar {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.navbar ul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: end;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Beranda */
+.beranda {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    padding: 0 300px;
+    background-color: aliceblue;
+}
+
+.beranda-desc .title {
+    font-size: 24px;
+    color: #B2794D;
+}
+
+.beranda-desc .title span {
+    line-height: 40px;
+    font-size: 50px;
+    color: #333;
+}
+
+.beranda-desc .description {
+    font-size: 20px;
+    color: #666666;
+    margin-top: 10px;
+}
+
+.beranda-desc button {
+    margin-top: 5px;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    transition-timing-function: ease-in-out;
+    font-size: 15px;
+}
+
+.beranda-desc button:hover {
+    background-color: white;
+    color: #333;
+    border: 2px solid #333;
+}
+
+.beranda-desc .beranda-button {
+    border: 2px solid #333;
+    background-color: white;
+    color: #333;
+}
+
+.beranda-desc .beranda-button:hover {
+    background-color: #333;
+    color: aliceblue;
+    border: none;
+}
+
+.beranda img {
+    width: 30rem;
+    height: 40rem;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
+/* up button */
+.up-button {
+    position: fixed;
+    z-index: 10;
+    background-color: #B2794D;
+    width: 50px;
+    height: 50px;
+    top: 90%;
+    left: 95%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 30px;
+    visibility: hidden;
+}
+
+/* perk */
+.perk {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #333;
+    color: white;
+}
+
+.perk .perk-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+}
+
+.perk .perk-grid i {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.perk .perk-grid .perk-title {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* product */
+.product {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 100px;
+    padding: 100px 300px;
+}
+
+.product .product-card {
+    position: relative;
+    height: 450px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 1px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.product .product-card:hover::before {
+    position: absolute;
+    z-index: 9;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(225, 225, 225, 0.1));
+}
+
+.product .product-card img {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px 10px 0 0;
+}
+
+.product .product-card .card-title {
+    font-size: 20px;
+    text-align: center;
+}
+
+/* contact */
+.contact {
+    position: relative;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-image: url(img/kamarMandi.jpg);
+    background-position: center center;
+    background-size: 100%;
+    border-top: 2px solid black;
+}
+
+.contact::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(225, 225, 225, 0.1));
+}
+
+.contact button {
+    position: relative;
+    width: 300px;
+    height: 50px;
+    background-color: white;
+    border-radius: 10px;
+    border: 2px solid #333;
+    z-index: 9;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.contact button:hover {
+    background-color: #333;
+    color: white;
+}
+
+.contact button i {
+    font-size: 23px;
+    margin: 0px 5px 0 0;;
+    color: #25D366;
+}
+
+/* footer */
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    background-color: #333;
+    color: white;
+    padding: 50px 0;
+}
+
+footer .footer-grid .grid-title {
+    font-size: 30px;
+}
+
+footer .footer-grid ul {
+    list-style: none;
+    font-size: 15px;
+}
+
+footer .footer-grid ul li a {
+    text-decoration: none;
+    color: rgb(185, 183, 183);;
+}
+
+footer .footer-grid ul li a:hover {
+    color: white;
+}
+
+footer .footer-grid .sosmed-grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    font-size: 25px;
+}
+
+footer .footer-title {
+    text-align: center;
+    grid-column: 1 / span 4;
+    margin-top: 50px;
+}
+
+@media (max-width: 1840px) {
+    .navbar {
+        padding: 0 200px;
+    }
+
+    /* beranda */
+    .beranda {
+        padding: 0 200px;
+    }
+
+    .beranda .title {
+        font-size: 18px;
+    }
+
+    .beranda .title span {
+        font-size: 40px;
+    }
+
+    .beranda .description {
+        font-size: 19px;
+    }
+
+    .beranda button {
+        width: 100px;
+        height: 40px;
+        font-size: 13px;
+    }
+
+    .beranda img {
+        width: 24rem;
+        height: 30rem;
+    }
+
+    /* up button */
+    .up-button {
+        width: 45px;
+        height: 45px;
+        font-size: 24px;
+    }
+
+    /* perk */
+    .perk {
+        height: 80px;
+    }
+
+    .perk .perk-grid i {
+        font-size: 35px;
+    }
+
+    .perk .perk-grid .perk-title {
+        font-size: 18px;
+    }
+
+    /* product */
+    .product {
+        padding: 100px 100px;
+    }
+
+    .product .product-card {
+        height: 400px;
+        width: 300px;
+    }
+
+    .product .product-card .card-title {
+        font-size: 17px;
+    }
+
+    /* contact */
+    .contact button {
+        width: 250px;
+        height: 45px;
+    }
+
+    /* footer */
+    footer .footer-grid .grid-title {
+        font-size: 28px;
+    }
+
+    footer .footer-grid ul {
+        font-size: 14px;
+    }
+
+    footer .footer-grid .sosmed-grid {
+        font-size: 21px;
+    }
+}

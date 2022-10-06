@@ -163,6 +163,62 @@ html {
     visibility: hidden;
 }
 
+/* about us */
+.about-us {
+    height: 70vh;
+    padding: 0 300px;
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 200px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+}
+
+.about-us .left img {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.7);
+} 
+
+.about-us .right {
+    text-align: end;
+    color: white;
+}
+
+.about-us .right h1 {
+    font-size: 50px;
+}
+
+.about-us .right div {
+    font-size: 20px;
+    text-align: end;
+}
+
+.about-us .right div span {
+    font-weight: bold;
+}
+
+.about-us .right button {
+    margin-top: 5px;
+    width: 150px;
+    height: 40px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 2s;
+    transition-timing-function: ease-in-out;
+}
+
+.about-us .right button:hover {
+    background-color: #333;
+    color: white;
+    border: 2px solid white;
+}
+
 /* perk */
 .perk {
     display: grid;
@@ -170,11 +226,12 @@ html {
     justify-content: space-around;
     align-items: center;
     height: 100px;
-    background-color: #333;
-    color: white;
+    background-color: white;
+    color: #333;
 }
 
 .perk .perk-grid {
+    position: relative;
     display: grid;
     align-items: center;
     grid-template-columns: auto auto;
@@ -200,6 +257,7 @@ html {
     align-items: center;
     row-gap: 100px;
     padding: 100px 300px;
+    background-color: #333;
 }
 
 .product .product-card {
@@ -211,6 +269,7 @@ html {
     cursor: pointer;
     transition: 0.5s;
     transition-timing-function: ease-in-out;
+    background-color: white;
 }
 
 .product .product-card:hover {
@@ -238,6 +297,65 @@ html {
     padding-top: 2px;
     font-size: 20px;
     text-align: center;
+}
+
+/* review */
+.review {
+    height: 60vh;
+    padding: 80px 300px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}
+
+.review h1 {
+    grid-column: 1 / span 4;
+    text-align: center;
+    font-size: 40px;
+}
+
+.review .review-card {
+    width: 250px;
+    height: 250px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.review .review-card .top {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+    font-size: 20px;
+}
+
+.review .review-card .top img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.review .review-card .text-review {
+    margin-top: 10px;
+    padding: 10px 0px 10px 0;
+    font-size: 15px;
+}
+
+.review .review-card .bottom {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+}
+
+.star {
+    color: orange;
 }
 
 /* contact */

@@ -48,7 +48,7 @@ html {
 
 .navbar ul {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     justify-content: end;
     align-items: center;
     column-gap: 50px;
@@ -483,6 +483,12 @@ footer .footer-title {
         height: 31rem;
     }
 
+    /* about */
+    .about-us {
+        height: 100vh;
+        padding: 50px 100px;
+    }
+
     /* up button */
     .up-button {
         width: 45px;
@@ -539,5 +545,15 @@ footer .footer-title {
 
     footer .footer-grid .sosmed-grid {
         font-size: 21px;
+    }
+
+    /* review */
+    .review {
+        height: 80vh;
+        padding: 80px 100px;
+    }
+
+    .review .review-card {
+        margin: 50px 0;
     }
 }

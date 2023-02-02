@@ -222,7 +222,7 @@ html {
 /* perk */
 .perk {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     justify-content: space-around;
     align-items: center;
     height: 100px;
@@ -316,7 +316,7 @@ html {
 
 .review .review-card {
     width: 250px;
-    height: 250px;
+    height: 300px;
     background-color: #333;
     padding: 20px;
     border-radius: 10px;
@@ -340,6 +340,7 @@ html {
 
 .review .review-card .text-review {
     margin-top: 10px;
+    height: 15vh;
     padding: 10px 0px 10px 0;
     font-size: 15px;
 }
